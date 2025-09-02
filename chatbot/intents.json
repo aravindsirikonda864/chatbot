@@ -1,0 +1,392 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "hey there",
+        "what's up",
+        "is anyone there?"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! Ask me anything about AI, ML or CS."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "i am leaving",
+        "talk to you later"
+      ],
+      "responses": [
+        "Goodbye!",
+        "See you soon.",
+        "Have a great day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "much appreciated",
+        "thankyou",
+        "thx"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Anytime.",
+        "Happy to help!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "who are you",
+        "tell me your name",
+        "what are you called"
+      ],
+      "responses": [
+        "I am an AI assistant for CS/AI topics. You can call me Bot.",
+        "I'm a learning chatbot built with FastAPI, sklearn and spaCy."
+      ]
+    },
+    {
+      "tag": "ai_intro",
+      "patterns": [
+        "what is ai",
+        "what is artificial intelligence",
+        "explain ai",
+        "define artificial intelligence",
+        "ai meaning"
+      ],
+      "responses": [
+        "Artificial Intelligence (AI) is the field of building machines that can perform tasks that normally require human intelligence, such as perception, reasoning, and language understanding."
+      ]
+    },
+    {
+      "tag": "ml_intro",
+      "patterns": [
+        "what is machine learning",
+        "explain ml",
+        "define machine learning",
+        "ml meaning",
+        "difference between ai and ml"
+      ],
+      "responses": [
+        "Machine Learning (ML) is a subset of AI focused on building systems that learn from data. AI is broader and includes rule-based systems, planning and reasoning as well."
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "what is deep learning",
+        "explain neural networks",
+        "what are neural networks",
+        "define deep learning",
+        "why deep learning works"
+      ],
+      "responses": [
+        "Deep Learning uses multi-layer neural networks to learn hierarchical representations from data. Popular architectures include CNNs for images and Transformers for language and multimodal tasks."
+      ]
+    },
+    {
+      "tag": "nlp",
+      "patterns": [
+        "what is nlp",
+        "explain natural language processing",
+        "what is tokenization",
+        "what is named entity recognition",
+        "ner meaning",
+        "what is pos tagging"
+      ],
+      "responses": [
+        "NLP (Natural Language Processing) is the field of enabling machines to understand and generate human language. Tasks include tokenization, NER, POS tagging, parsing, summarization, translation and question answering."
+      ]
+    },
+    {
+      "tag": "transformers",
+      "patterns": [
+        "what is transformer",
+        "explain transformers model",
+        "attention mechanism",
+        "how does attention work",
+        "what is self attention"
+      ],
+      "responses": [
+        "Transformers are models that rely on self-attention to model relationships between tokens. They replaced RNNs for many NLP tasks and form the basis of BERT, GPT and many other models."
+      ]
+    },
+    {
+      "tag": "bert_gpt",
+      "patterns": [
+        "what is bert",
+        "what is gpt",
+        "difference between bert and gpt",
+        "bert vs gpt",
+        "openai gpt"
+      ],
+      "responses": [
+        "BERT is a bidirectional encoder suitable for understanding tasks (classification, NER). GPT is an autoregressive decoder optimized for text generation. Each has different pretraining objectives and use-cases."
+      ]
+    },
+    {
+      "tag": "prompting",
+      "patterns": [
+        "what is prompt engineering",
+        "how to write prompts",
+        "prompt engineering tips",
+        "few shot prompting"
+      ],
+      "responses": [
+        "Prompt engineering is designing input prompts to guide large language models. Use clear instructions, few-shot examples, and explicit output formats. For best results iterate and include constraints."
+      ]
+    },
+    {
+      "tag": "rag",
+      "patterns": [
+        "what is rag",
+        "retrieval augmented generation",
+        "how r a g works",
+        "use retrieval with llms"
+      ],
+      "responses": [
+        "RAG (Retrieval-Augmented Generation) combines a retriever (vector DB or search) with a generator (LLM). Retrieve relevant documents, then condition the LLM on them for more accurate responses and up-to-date info."
+      ]
+    },
+    {
+      "tag": "vector_db",
+      "patterns": [
+        "what is a vector database",
+        "faiss vs milvus",
+        "why use vector db",
+        "embedding store"
+      ],
+      "responses": [
+        "Vector databases store embeddings and enable nearest-neighbor search for semantic retrieval. Popular options: FAISS, Milvus, Pinecone, Weaviate. They're key for RAG and semantic search."
+      ]
+    },
+    {
+      "tag": "embeddings",
+      "patterns": [
+        "what are embeddings",
+        "word embeddings",
+        "sentence embeddings",
+        "how to generate embeddings"
+      ],
+      "responses": [
+        "Embeddings are numeric vector representations of text (or images) capturing semantic information. Use models like SBERT, OpenAI embeddings, or CLIP for multimodal embeddings."
+      ]
+    },
+    {
+      "tag": "computer_vision",
+      "patterns": [
+        "what is computer vision",
+        "explain cv",
+        "what is image classification",
+        "difference between detection and segmentation"
+      ],
+      "responses": [
+        "Computer Vision (CV) enables machines to interpret images and video. Tasks include image classification, object detection (bounding boxes), and segmentation (pixel-level labels)."
+      ]
+    },
+    {
+      "tag": "yolo",
+      "patterns": [
+        "what is yolo",
+        "explain yolo",
+        "yolo vs faster rcnn",
+        "real time object detection"
+      ],
+      "responses": [
+        "YOLO is a family of real-time object detectors optimized for speed and good accuracy. Faster R-CNN is more accurate in some settings but slower. YOLOv5/YOLOv8 are commonly used for production."
+      ]
+    },
+    {
+      "tag": "vision_transformer",
+      "patterns": [
+        "what is vision transformer",
+        "explain vit",
+        "vit vs cnn",
+        "transformer for images"
+      ],
+      "responses": [
+        "Vision Transformers (ViT) apply transformer architectures to image patches. They can achieve strong performance especially with large-scale pretraining and data augmentation."
+      ]
+    },
+    {
+      "tag": "diffusion_models",
+      "patterns": [
+        "what is diffusion model",
+        "explain diffusion",
+        "stable diffusion",
+        "how do diffusion models work"
+      ],
+      "responses": [
+        "Diffusion models are generative models that learn to reverse a noising process to generate samples. They power image-generation systems like Stable Diffusion and DALL·E 2 (partially)."
+      ]
+    },
+    {
+      "tag": "generative_ai",
+      "patterns": [
+        "what is generative ai",
+        "generative models examples",
+        "gan vs diffusion",
+        "text to image models"
+      ],
+      "responses": [
+        "Generative AI creates new data (images, text, audio). Examples: GANs, VAEs, diffusion models, and large generative language models. Each has tradeoffs in quality and training stability."
+      ]
+    },
+    {
+      "tag": "self_supervised",
+      "patterns": [
+        "what is self supervised learning",
+        "explain self supervision",
+        "contrastive learning",
+        "simclr meaning"
+      ],
+      "responses": [
+        "Self-supervised learning uses intrinsic structure of data to create supervision signals (e.g., predicting parts of input). Contrastive learning (SimCLR) trains models to bring similar views closer in embedding space."
+      ]
+    },
+    {
+      "tag": "transfer_learning",
+      "patterns": [
+        "what is transfer learning",
+        "fine tuning a model",
+        "when to use transfer learning",
+        "how to fine tune"
+      ],
+      "responses": [
+        "Transfer learning reuses a pretrained model and fine-tunes it on a new task. Helpful when you have limited labeled data; commonly used in CV and NLP."
+      ]
+    },
+    {
+      "tag": "reinforcement_learning",
+      "patterns": [
+        "what is reinforcement learning",
+        "explain rl",
+        "q learning",
+        "policy gradient"
+      ],
+      "responses": [
+        "Reinforcement Learning trains agents via rewards and interactions with an environment. Algorithms include Q-learning, DQN, PPO and actor-critic methods. Useful for sequential decision-making."
+      ]
+    },
+    {
+      "tag": "federated_learning",
+      "patterns": [
+        "what is federated learning",
+        "privacy preserving training",
+        "how federated works"
+      ],
+      "responses": [
+        "Federated Learning trains models across multiple devices or silos without moving raw data to a central server — useful for privacy-preserving ML."
+      ]
+    },
+    {
+      "tag": "mlops",
+      "patterns": [
+        "what is mlops",
+        "deploy models to production",
+        "monitoring models",
+        "model drift handling"
+      ],
+      "responses": [
+        "MLOps combines ML engineering and software practices: automated training, CI/CD, model serving, monitoring, data versioning, and handling model drift in production."
+      ]
+    },
+    {
+      "tag": "metrics",
+      "patterns": [
+        "what is accuracy vs f1",
+        "precision recall f1",
+        "roc auc meaning",
+        "evaluation metrics for classification"
+      ],
+      "responses": [
+        "Accuracy is overall correct predictions; Precision measures positives that are true; Recall measures how many true positives were found. F1 is the harmonic mean of precision and recall. Use ROC AUC for ranking tasks."
+      ]
+    },
+    {
+      "tag": "explainability",
+      "patterns": [
+        "what is model explainability",
+        "shap vs lime",
+        "why explain models",
+        "interpretability methods"
+      ],
+      "responses": [
+        "Explainability methods (SHAP, LIME) help understand model predictions by attributing importance to features. Useful for debugging, fairness and regulatory reasons."
+      ]
+    },
+    {
+      "tag": "docker",
+      "patterns": [
+        "how to dockerize a model",
+        "create docker image for ml",
+        "docker for deployment"
+      ],
+      "responses": [
+        "Containerize models with Docker to ensure environment consistency. Build an image with your app and dependencies, then run containers in production with orchestration tools like Kubernetes."
+      ]
+    },
+    {
+      "tag": "edge_ai",
+      "patterns": [
+        "what is edge ai",
+        "deploy model to mobile",
+        "tflite vs onnx",
+        "optimize model for edge"
+      ],
+      "responses": [
+        "Edge AI runs models on devices (phones, cameras) for low-latency and privacy. Tools: TensorFlow Lite, ONNX, model quantization and pruning for smaller footprints."
+      ]
+    },
+    {
+      "tag": "python_help",
+      "patterns": [
+        "how to learn python",
+        "python tips",
+        "help with python",
+        "best python resources",
+        "python for data science"
+      ],
+      "responses": [
+        "Start with Python basics (syntax, data types, control flow), then learn libraries like NumPy, pandas, matplotlib, and frameworks like scikit-learn and PyTorch/TensorFlow for ML."
+      ]
+    },
+    {
+      "tag": "resources",
+      "patterns": [
+        "best books for ml",
+        "best courses for ai",
+        "where to learn deep learning",
+        "recommend resources for cs"
+      ],
+      "responses": [
+        "Good resources: 'Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow' by A. Géron; 'Deep Learning' by Goodfellow; online courses from Coursera, fast.ai and CS programs on edX."
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        ""
+      ],
+      "responses": [
+        "I'm sorry — I don't understand. Could you rephrase or ask about AI, ML, Python or CS topics?"
+      ]
+    }
+  ]
+}

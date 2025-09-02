@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+scikit-learn
+nltk
+jinja2

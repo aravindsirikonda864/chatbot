@@ -1,0 +1,980 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good evening"
+      ],
+      "responses": [
+        "Hello!",
+        "Hi there!",
+        "Hey, how can I help you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "take care"
+      ],
+      "responses": [
+        "Goodbye!",
+        "See you soon!",
+        "Take care!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "Glad I could help!"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you",
+        "what's up",
+        "how is it going"
+      ],
+      "responses": [
+        "I'm doing great, thanks!",
+        "All good! How about you?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "who are you",
+        "tell me your name"
+      ],
+      "responses": [
+        "I'm your chatbot assistant!",
+        "You can call me ChatBot."
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you",
+        "what is your age"
+      ],
+      "responses": [
+        "I'm timeless!",
+        "I was created recently, so I'm pretty young."
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "tell me a joke",
+        "make me laugh"
+      ],
+      "responses": [
+        "Why don\u2019t programmers like nature? Too many bugs!",
+        "I told my computer I needed a break, and it froze."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what's the weather",
+        "weather today",
+        "is it raining"
+      ],
+      "responses": [
+        "I can\u2019t check real-time weather, but I hope it\u2019s sunny where you are!"
+      ]
+    },
+    {
+      "tag": "hobbies",
+      "patterns": [
+        "what are your hobbies",
+        "do you have hobbies"
+      ],
+      "responses": [
+        "I love chatting and learning new things!",
+        "Helping people is my hobby."
+      ]
+    },
+    {
+      "tag": "favorite_color",
+      "patterns": [
+        "what is your favorite color",
+        "do you like colors"
+      ],
+      "responses": [
+        "I like blue, it reminds me of the sky!",
+        "All colors are amazing."
+      ]
+    },
+    {
+      "tag": "favorite_food",
+      "patterns": [
+        "what is your favorite food",
+        "do you eat"
+      ],
+      "responses": [
+        "I don\u2019t eat, but I think pizza sounds delicious!"
+      ]
+    },
+    {
+      "tag": "favorite_movie",
+      "patterns": [
+        "favorite movie",
+        "do you like movies"
+      ],
+      "responses": [
+        "I think The Matrix is a classic!",
+        "Movies about AI are fun to me."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it",
+        "tell me the time"
+      ],
+      "responses": [
+        "I can't check real-time clock yet, but you can look at your device clock!"
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what day is it",
+        "tell me the date"
+      ],
+      "responses": [
+        "I can't check real-time calendar, but I know it\u2019s today!"
+      ]
+    },
+    {
+      "tag": "morning",
+      "patterns": [
+        "good morning"
+      ],
+      "responses": [
+        "Good morning! Have a great day ahead!"
+      ]
+    },
+    {
+      "tag": "night",
+      "patterns": [
+        "good night"
+      ],
+      "responses": [
+        "Good night! Sweet dreams!"
+      ]
+    },
+    {
+      "tag": "where_from",
+      "patterns": [
+        "where are you from",
+        "your origin"
+      ],
+      "responses": [
+        "I live in the cloud!",
+        "I was created by developers."
+      ]
+    },
+    {
+      "tag": "like_ai",
+      "patterns": [
+        "do you like ai",
+        "do you love ai"
+      ],
+      "responses": [
+        "Of course! AI is my core!",
+        "Yes, AI is amazing!"
+      ]
+    },
+    {
+      "tag": "sing",
+      "patterns": [
+        "can you sing",
+        "sing a song"
+      ],
+      "responses": [
+        "I can\u2019t sing yet, but I can share lyrics or tell you about songs."
+      ]
+    },
+    {
+      "tag": "dance",
+      "patterns": [
+        "can you dance",
+        "dance for me"
+      ],
+      "responses": [
+        "I would if I had legs!",
+        "I can only dance with words."
+      ]
+    },
+    {
+      "tag": "python",
+      "patterns": [
+        "what is python",
+        "explain python"
+      ],
+      "responses": [
+        "Python is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "java",
+      "patterns": [
+        "what is java",
+        "explain java"
+      ],
+      "responses": [
+        "Java is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "c_language",
+      "patterns": [
+        "what is c language",
+        "explain c language"
+      ],
+      "responses": [
+        "C Language is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "c++",
+      "patterns": [
+        "what is c++",
+        "explain c++"
+      ],
+      "responses": [
+        "C++ is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "javascript",
+      "patterns": [
+        "what is javascript",
+        "explain javascript"
+      ],
+      "responses": [
+        "Javascript is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "html",
+      "patterns": [
+        "what is html",
+        "explain html"
+      ],
+      "responses": [
+        "Html is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "css",
+      "patterns": [
+        "what is css",
+        "explain css"
+      ],
+      "responses": [
+        "Css is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "sql",
+      "patterns": [
+        "what is sql",
+        "explain sql"
+      ],
+      "responses": [
+        "Sql is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "nosql",
+      "patterns": [
+        "what is nosql",
+        "explain nosql"
+      ],
+      "responses": [
+        "Nosql is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "mongodb",
+      "patterns": [
+        "what is mongodb",
+        "explain mongodb"
+      ],
+      "responses": [
+        "Mongodb is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "mysql",
+      "patterns": [
+        "what is mysql",
+        "explain mysql"
+      ],
+      "responses": [
+        "Mysql is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "postgresql",
+      "patterns": [
+        "what is postgresql",
+        "explain postgresql"
+      ],
+      "responses": [
+        "Postgresql is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "algorithms",
+      "patterns": [
+        "what is algorithms",
+        "explain algorithms"
+      ],
+      "responses": [
+        "Algorithms is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "data_structures",
+      "patterns": [
+        "what is data structures",
+        "explain data structures"
+      ],
+      "responses": [
+        "Data Structures is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "linked_list",
+      "patterns": [
+        "what is linked list",
+        "explain linked list"
+      ],
+      "responses": [
+        "Linked List is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "stack",
+      "patterns": [
+        "what is stack",
+        "explain stack"
+      ],
+      "responses": [
+        "Stack is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "queue",
+      "patterns": [
+        "what is queue",
+        "explain queue"
+      ],
+      "responses": [
+        "Queue is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "tree",
+      "patterns": [
+        "what is tree",
+        "explain tree"
+      ],
+      "responses": [
+        "Tree is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "graph",
+      "patterns": [
+        "what is graph",
+        "explain graph"
+      ],
+      "responses": [
+        "Graph is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "binary_search",
+      "patterns": [
+        "what is binary search",
+        "explain binary search"
+      ],
+      "responses": [
+        "Binary Search is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "sorting",
+      "patterns": [
+        "what is sorting",
+        "explain sorting"
+      ],
+      "responses": [
+        "Sorting is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "os",
+      "patterns": [
+        "what is os",
+        "explain os"
+      ],
+      "responses": [
+        "Os is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "linux",
+      "patterns": [
+        "what is linux",
+        "explain linux"
+      ],
+      "responses": [
+        "Linux is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "windows",
+      "patterns": [
+        "what is windows",
+        "explain windows"
+      ],
+      "responses": [
+        "Windows is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "networking",
+      "patterns": [
+        "what is networking",
+        "explain networking"
+      ],
+      "responses": [
+        "Networking is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "tcp_ip",
+      "patterns": [
+        "what is tcp ip",
+        "explain tcp ip"
+      ],
+      "responses": [
+        "Tcp Ip is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "http",
+      "patterns": [
+        "what is http",
+        "explain http"
+      ],
+      "responses": [
+        "Http is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "https",
+      "patterns": [
+        "what is https",
+        "explain https"
+      ],
+      "responses": [
+        "Https is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "dns",
+      "patterns": [
+        "what is dns",
+        "explain dns"
+      ],
+      "responses": [
+        "Dns is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "api",
+      "patterns": [
+        "what is api",
+        "explain api"
+      ],
+      "responses": [
+        "Api is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "rest_api",
+      "patterns": [
+        "what is rest api",
+        "explain rest api"
+      ],
+      "responses": [
+        "Rest Api is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "soap_api",
+      "patterns": [
+        "what is soap api",
+        "explain soap api"
+      ],
+      "responses": [
+        "Soap Api is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "microservices",
+      "patterns": [
+        "what is microservices",
+        "explain microservices"
+      ],
+      "responses": [
+        "Microservices is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "docker",
+      "patterns": [
+        "what is docker",
+        "explain docker"
+      ],
+      "responses": [
+        "Docker is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "kubernetes",
+      "patterns": [
+        "what is kubernetes",
+        "explain kubernetes"
+      ],
+      "responses": [
+        "Kubernetes is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "devops",
+      "patterns": [
+        "what is devops",
+        "explain devops"
+      ],
+      "responses": [
+        "Devops is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "git",
+      "patterns": [
+        "what is git",
+        "explain git"
+      ],
+      "responses": [
+        "Git is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "github",
+      "patterns": [
+        "what is github",
+        "explain github"
+      ],
+      "responses": [
+        "Github is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "ci_cd",
+      "patterns": [
+        "what is ci cd",
+        "explain ci cd"
+      ],
+      "responses": [
+        "Ci Cd is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "testing",
+      "patterns": [
+        "what is testing",
+        "explain testing"
+      ],
+      "responses": [
+        "Testing is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "unit_testing",
+      "patterns": [
+        "what is unit testing",
+        "explain unit testing"
+      ],
+      "responses": [
+        "Unit Testing is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "integration_testing",
+      "patterns": [
+        "what is integration testing",
+        "explain integration testing"
+      ],
+      "responses": [
+        "Integration Testing is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "agile",
+      "patterns": [
+        "what is agile",
+        "explain agile"
+      ],
+      "responses": [
+        "Agile is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "scrum",
+      "patterns": [
+        "what is scrum",
+        "explain scrum"
+      ],
+      "responses": [
+        "Scrum is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "ai_ethics",
+      "patterns": [
+        "what is ai ethics",
+        "explain ai ethics"
+      ],
+      "responses": [
+        "Ai Ethics is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "robotics",
+      "patterns": [
+        "what is robotics",
+        "explain robotics"
+      ],
+      "responses": [
+        "Robotics is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "neural_network",
+      "patterns": [
+        "what is neural network",
+        "explain neural network"
+      ],
+      "responses": [
+        "Neural Network is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "cnn",
+      "patterns": [
+        "what is cnn",
+        "explain cnn"
+      ],
+      "responses": [
+        "Cnn is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "rnn",
+      "patterns": [
+        "what is rnn",
+        "explain rnn"
+      ],
+      "responses": [
+        "Rnn is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "transformers",
+      "patterns": [
+        "what is transformers",
+        "explain transformers"
+      ],
+      "responses": [
+        "Transformers is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "chatgpt",
+      "patterns": [
+        "what is chatgpt",
+        "explain chatgpt"
+      ],
+      "responses": [
+        "Chatgpt is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "bedrock",
+      "patterns": [
+        "what is bedrock",
+        "explain bedrock"
+      ],
+      "responses": [
+        "Bedrock is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "aws",
+      "patterns": [
+        "what is aws",
+        "explain aws"
+      ],
+      "responses": [
+        "Aws is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "azure",
+      "patterns": [
+        "what is azure",
+        "explain azure"
+      ],
+      "responses": [
+        "Azure is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "gcp",
+      "patterns": [
+        "what is gcp",
+        "explain gcp"
+      ],
+      "responses": [
+        "Gcp is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "edge_computing",
+      "patterns": [
+        "what is edge computing",
+        "explain edge computing"
+      ],
+      "responses": [
+        "Edge Computing is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "iot",
+      "patterns": [
+        "what is iot",
+        "explain iot"
+      ],
+      "responses": [
+        "Iot is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "vr",
+      "patterns": [
+        "what is vr",
+        "explain vr"
+      ],
+      "responses": [
+        "Vr is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "ar",
+      "patterns": [
+        "what is ar",
+        "explain ar"
+      ],
+      "responses": [
+        "Ar is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "quantum_computing",
+      "patterns": [
+        "what is quantum computing",
+        "explain quantum computing"
+      ],
+      "responses": [
+        "Quantum Computing is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "cryptography",
+      "patterns": [
+        "what is cryptography",
+        "explain cryptography"
+      ],
+      "responses": [
+        "Cryptography is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "hashing",
+      "patterns": [
+        "what is hashing",
+        "explain hashing"
+      ],
+      "responses": [
+        "Hashing is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "encryption",
+      "patterns": [
+        "what is encryption",
+        "explain encryption"
+      ],
+      "responses": [
+        "Encryption is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "compiler",
+      "patterns": [
+        "what is compiler",
+        "explain compiler"
+      ],
+      "responses": [
+        "Compiler is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "interpreter",
+      "patterns": [
+        "what is interpreter",
+        "explain interpreter"
+      ],
+      "responses": [
+        "Interpreter is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "virtualization",
+      "patterns": [
+        "what is virtualization",
+        "explain virtualization"
+      ],
+      "responses": [
+        "Virtualization is an important concept in computer science."
+      ]
+    },
+    {
+      "tag": "ai",
+      "patterns": [
+        "what is ai",
+        "define artificial intelligence"
+      ],
+      "responses": [
+        "AI is the simulation of human intelligence in machines."
+      ]
+    },
+    {
+      "tag": "ml",
+      "patterns": [
+        "what is machine learning",
+        "define ml"
+      ],
+      "responses": [
+        "ML is teaching machines to learn from data without being explicitly programmed."
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "what is deep learning"
+      ],
+      "responses": [
+        "Deep Learning is a subset of ML using neural networks with many layers."
+      ]
+    },
+    {
+      "tag": "nlp",
+      "patterns": [
+        "what is nlp",
+        "explain natural language processing"
+      ],
+      "responses": [
+        "NLP helps machines understand and process human language."
+      ]
+    },
+    {
+      "tag": "computer_vision",
+      "patterns": [
+        "what is computer vision"
+      ],
+      "responses": [
+        "Computer Vision enables machines to interpret and analyze images and videos."
+      ]
+    },
+    {
+      "tag": "data_science",
+      "patterns": [
+        "what is data science"
+      ],
+      "responses": [
+        "Data Science extracts insights and knowledge from data."
+      ]
+    },
+    {
+      "tag": "cloud_computing",
+      "patterns": [
+        "what is cloud computing"
+      ],
+      "responses": [
+        "Cloud computing delivers services like storage, servers, and databases over the internet."
+      ]
+    },
+    {
+      "tag": "cyber_security",
+      "patterns": [
+        "what is cyber security"
+      ],
+      "responses": [
+        "Cyber Security protects systems, networks, and data from attacks."
+      ]
+    },
+    {
+      "tag": "blockchain",
+      "patterns": [
+        "what is blockchain"
+      ],
+      "responses": [
+        "Blockchain is a decentralized digital ledger used in cryptocurrencies and secure systems."
+      ]
+    },
+    {
+      "tag": "big_data",
+      "patterns": [
+        "what is big data"
+      ],
+      "responses": [
+        "Big Data refers to extremely large data sets analyzed computationally to reveal trends and patterns."
+      ]
+    }
+  ]
+}
