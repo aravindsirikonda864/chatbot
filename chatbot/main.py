@@ -1,3 +1,4 @@
+THIS_IS_THE_RENDER_FILE = "YES"
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
