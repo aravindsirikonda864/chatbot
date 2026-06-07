@@ -199,9 +199,16 @@ app.add_middleware(
 )
 
 # ----------------- Routes -----------------
-@app.get("/", response_class=HTMLResponse)
-async def root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+# ----------------- Routes -----------------
+@app.get("/")
+async def root():
+    return {
+        "status": "working",
+        "base_dir": BASE_DIR,
+        "templates_exists": os.path.exists(os.path.join(BASE_DIR, "templates")),
+        "index_exists": os.path.exists(os.path.join(BASE_DIR, "templates", "index.html")),
+        "static_exists": os.path.exists(os.path.join(BASE_DIR, "static"))
+    }
 
 @app.post("/chat")
 async def chat_endpoint(payload: dict):
