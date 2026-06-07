@@ -202,14 +202,8 @@ app.add_middleware(
 # ----------------- Routes -----------------
 @app.get("/")
 async def root():
-    return {
-        "status": "working",
-        "base_dir": BASE_DIR,
-        "templates_exists": os.path.exists(os.path.join(BASE_DIR, "templates")),
-        "index_exists": os.path.exists(os.path.join(BASE_DIR, "templates", "index.html")),
-        "static_exists": os.path.exists(os.path.join(BASE_DIR, "static"))
-    }
-
+    with open(os.path.join(BASE_DIR, "templates", "index.html"), "r", encoding="utf-8") as f:
+        return HTMLResponse(content=f.read())
 @app.post("/chat")
 async def chat_endpoint(payload: dict):
     try:
